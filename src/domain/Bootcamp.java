@@ -8,6 +8,7 @@ public class Bootcamp extends Conteudo {
     private final LocalDate dataInicio = LocalDate.now();
     private final LocalDate dataFim = dataInicio.plusDays(45);
     private String descricao;
+    private String nome;
     private Set<Dev> devsInscritos = new LinkedHashSet<>();
     private Set<Conteudo> conteudos = new LinkedHashSet<>();
 
@@ -38,6 +39,15 @@ public class Bootcamp extends Conteudo {
 
     public void setDevsInscritos(Set<Dev> devsInscritos) {
         this.devsInscritos = devsInscritos;
+    }
+
+
+    public String getNome() {
+        return nome;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
     }
 
     public Set<Conteudo> getConteudos() {
